@@ -1,0 +1,245 @@
+/* Login */
+.login-container {
+    height: 800px;
+    background-size: cover;
+}
+
+.login-content {
+    display: flex;
+    padding: 20px 0;
+    background-color: #634832;
+    border-radius: 10px;
+    opacity: 0.9;
+    text-align: center;
+    margin: 150px auto;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 8rem;
+    line-height: 8rem;
+    color: var(--white-color);
+}
+
+/* Role */
+
+.login-role {
+    margin: 10px auto;
+}
+
+.select-btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-size: 2.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.select-btn i {
+    font-size: 2.5rem;
+    transition: 0.3s;
+    /* transform: rotate(0deg); */
+}
+
+.login-role.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+
+
+.login-role.active .options {
+    display: block;
+}
+
+.options {
+    position: relative;
+    display: none;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.option {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px 0;
+    background-color: var(--primary-color);
+}
+
+
+.option:hover {
+    background-color: var(--brown-color);
+    color: var(--white-color);
+}
+
+.option i {
+    display: block;
+    padding: 5px 10px;
+    font-size: 1.6rem;
+    margin-right: 12px;
+}
+
+.option span {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+
+/* Customer */
+
+.login-customer {
+    display: none;
+    margin: 10px 20px;
+}
+
+.customer-name {
+    margin: 5px auto;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2.5px solid var(--brown-color);
+    outline: none;
+}
+
+
+.customer-name::placeholder {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.login-customer-select {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-customer-submit {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.login-customer-submit:hover {
+    background-color: var(--brown-color);
+    color: var(--primary-color);
+}
+
+/* Staff */
+.login-staff {
+    display: none;
+    margin: 10px 20px;
+}
+
+.staff-name {
+    margin: 5px auto;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2.5px solid var(--brown-color);
+    outline: none;
+}
+
+.staff-pass {
+    margin: 20px auto;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2.5px solid var(--brown-color);
+    outline: none;
+}
+
+.staff-name::placeholder,
+.staff-pass::placeholder {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.login-staff-submit {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+
+}
+
+.login-staff-submit:hover {
+    background-color: var(--brown-color);
+    color: var(--primary-color);
+}
+
+
+/* Manager */
+
+.login-manager {
+    display: none;
+    margin: 10px 20px;
+}
+
+.manager-name {
+    margin: 5px auto;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2.5px solid var(--brown-color);
+    outline: none;
+}
+
+.manager-pass {
+    margin: 20px auto;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2.5px solid var(--brown-color);
+    outline: none;
+}
+
+.manager-name::placeholder,
+.manager-pass::placeholder {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.login-manager-submit {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+
+}
+
+.login-manager-submit:hover {
+    background-color: var(--brown-color);
+    color: var(--primary-color);
+}

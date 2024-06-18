@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="asset/css/style_login.css">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/grid.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
+
+    <!-- link js -->
+
+    <script src="./asset/js/js_login.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- Login -->
+    <div style="background-image: url(./asset/img/img_login/login_bg.jpg);" class="login-container grid">
+
+        <div class="row">
+
+            <div class="login-content col l-6">
+
+                <h1 class="login-title col l-12">LOGIN</h1>
+
+                <!-- Role -->
+                <div class="login-role col l-3">
+
+                    <div class="select-btn">
+                        <span class="select-text">ROLE</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <ul class="options">
+                        <li class="option">
+                            <i class="fa-solid fa-user">
+                                <span>CUSTOMER</span>
+                            </i>
+                        </li>
+
+                        <li class="option">
+                            <i class="fa-solid fa-users">
+                                <span>STAFF</span>
+                            </i>
+                        </li>
+
+                        <li class="option">
+                            <i class="fa-solid fa-user-tie">
+                                <span>MANAGER</span>
+                            </i>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Customer -->
+
+                <form style="display: none;" action="" method="" class="login-customer col l-12">
+                    <div class="row">
+
+                        <input type="text" class="customer-name col l-10" name="username" placeholder="Name: ">
+
+                        <div class="col l-2">
+                            <select name="role-list" class="login-customer-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Submit" class="login-customer-submit col l-12">
+                    </div>
+                </form>
+
+
+                <!-- Staff -->
+
+                <form style="display: none;" action="" method="" class="login-staff col l-12">
+                    <div class="row">
+                        <input type="text" class="staff-name col l-12" name="username" placeholder="User Name:">
+                        <input type="password" class="staff-pass col l-12" name="password" placeholder="Password:">
+                        <input type="submit" value="Submit" class="login-staff-submit col l-12">
+                    </div>
+                </form>
+
+                <!-- Manager -->
+
+                <form style="display: none;" action="" method="" class="login-manager col l-12">
+                    <div class="row">
+                        <input type="text" class="manager-name col l-12" name="username" placeholder="User Name:">
+                        <input type="password" class="manager-pass col l-12" name="password" placeholder="Password:">
+                        <input type="submit" value="Submit" class="login-manager-submit col l-12">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
