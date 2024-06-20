@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/* BACKGROUND COLOR */
+body {
+    background-color: #B29377;
+}
+
+/* PAGE SCROLL SNAP */
+html {
+    scroll-snap-type: y mandatory; /* Snap direction is y | mandatory */
+}
+section {
+    scroll-snap-align: start; /* Snap to the start of the next section */
+}
+
+/* TITLE AND BUTTON CONTAINER */
+.title-and-button-container {
+    display: flex; 
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+}
+.button-left, .button-right {
+    font-size: 5rem;
+    user-select: none;
+}
+.title {
+    user-select: none;
+    font-size: 3rem;
+}
+
+/* ITEM CONTAINER */
+.item-container {
+    display: flex;
+    gap: 7rem;
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory; /* Snap direction inline | mandatory */
+    scroll-padding-inline-start: 1rem; /* padding of first item */
+}
+.item  {
+    display: grid;
+    grid-template-rows: min-content; /* Sets the size of each row to depend on the smallest item in the row */
+    background-color: #ffffff;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 5rem;
+    flex-shrink: 0; /* Prevent item from shrinking when resize window smaller */
+    box-shadow: 0 0 1rem black; /* Shadow effect */
+    scroll-snap-align: start; /* Snaps to the start of the next item */
+}
+.item-img {
+    
+    width: 20rem;
+    height: 20rem;
+    margin: -10rem auto 1rem; /* Negative margin to raise the image */
+}
+.item-rating {
+    color: #FFC107;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.item p {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+.item-name {
+    justify-content: start;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.item-price {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+.item span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    width: 2rem;
+}
