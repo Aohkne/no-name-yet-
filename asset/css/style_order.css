@@ -92,3 +92,8 @@ section {
 .icon {
     width: 2rem;
 }
+
+/* Hides horizontal scroll */
+.item-container::-webkit-scrollbar {
+    display: none;
+}
