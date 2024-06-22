@@ -200,6 +200,7 @@ main {
 .details-container img{
     width: 8rem;
     border-radius: 5rem;
+    box-shadow: 0 0 0.5rem black;
 }
 .name-container, .role-container {
     display: flex;
@@ -226,6 +227,7 @@ main {
     font-size: 2rem;
     font-weight: bolder;
     cursor: pointer;
+    box-shadow: 0 0 0.5rem black;
 }
 .call-button-container:hover {
     background-color: darkgreen;
