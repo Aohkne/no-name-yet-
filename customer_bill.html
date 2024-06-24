@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/css/base.css" />
+    <link rel="stylesheet" href="/asset/css/style_customer_bill.css" />
+    <link
+      rel="stylesheet"
+      href="asset/font/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <script src="/asset/js/js_customer_bill.js"></script>
+  </head>
+  <body>
+    <!-- DESKTOP NAVIGATION BAR -->
+    <nav id="desktop-nav">
+      <div class="logo-and-name-container">
+        <a href="#"
+          ><h1 class="logo-and-name">
+            <span>
+              <img src="/asset/img img_home/logo.png" alt="" class="logo" />
+            </span>
+            NAME
+          </h1></a
+        >
+      </div>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="#">HELP</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="cart-container">
+        <a href="#"
+          ><img src="/asset/img img_home/grocery-store.png" alt="" class="icon"
+        /></a>
+      </div>
+    </nav>
+    <!-- HAMBURGER NAVIGATION BAR -->
+    <nav id="hamburger-nav">
+      <div class="logo-and-name-container">
+        <a href="#"
+          ><h1 class="logo-and-name">
+            <span>
+              <img src="/asset/img img_home/logo.png" alt="" class="logo" />
+            </span>
+            NAME
+          </h1></a
+        >
+      </div>
+      <div class="cart-container">
+        <a href="#"
+          ><img src="/asset/img img_home/grocery-store.png" alt="" class="icon"
+        /></a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <div class="menu-links">
+          <li><a href="#" onclick="toggleMenu()">HOME</a></li>
+          <li><a href="#" onclick="toggleMenu()">ORDER</a></li>
+          <li><a href="#" onclick="toggleMenu()">HELP</a></li>
+          <li><a href="#" onclick="toggleMenu()">ABOUT</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN CONTAINER -->
+    <main>
+      <div class="thank-you-container">
+        <h2>THANK YOU!</h2>
+      </div>
+
+      <div class="receipt-container">
+        <h2 class="message">Here's your receipt</h2>
+        <div class="receipt-details-container">
+          <div class="receipt">
+            <h3 class="shop-name">SHOP NAME</h3>
+            <div class="item">
+              <p class="item-name">Coca x2</p>
+              <p class="item-price">
+                ................................................................$30.00
+              </p>
+            </div>
+            <div class="item">
+              <p class="item-name">Latte</p>
+              <p class="item-price">
+                .................................................................$15.00
+              </p>
+            </div>
+            <div class="item">
+              <p class="item-name">Pepsi x3</p>
+              <p class="item-price">
+                .................................................................$45.00
+              </p>
+            </div>
+            <div class="item">
+              <p class="item-name">Spicy Noodles</p>
+              <p class="item-price">
+                .................................................................$15.00
+              </p>
+            </div>
+            <div class="total">
+              <p>
+                -------------------------------------------------------------------
+              </p>
+              <p>
+                Total........................................................$105.00
+              </p>
+              <p>Payment type: Cash</p>
+
+              <p>QR Code here</p>
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="save-button">Save as PNG</button>
+          <button class="home-button">Back to Home</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

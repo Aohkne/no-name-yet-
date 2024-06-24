@@ -15,7 +15,7 @@ nav {
     background-color: #895f46;
     display: flex;
     justify-content: space-between;
-    height: 6rem;
+    height: 8vh;
     user-select: none;
     box-sizing: border-box;
 }
@@ -233,6 +233,9 @@ nav {
     font-weight: bolder;
     background-color: #A47F65;
 }
+.minus-quantity-button:hover, .plus-quantity-button:hover {
+    background-color: hsl(25, 26%, 45%);
+}
 .minus-quantity-button:active, .plus-quantity-button:active {
     background-color: hsl(25, 26%, 40%);
 }
@@ -253,6 +256,9 @@ nav {
     padding: 1rem 2rem;
     background-color: #FF0000;
     cursor: pointer;
+}
+.delete-button:hover {
+    background-color: #db0000
 }
 .delete-button:active {
     background-color: #b30000
